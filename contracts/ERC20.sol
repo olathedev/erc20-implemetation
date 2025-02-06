@@ -57,7 +57,7 @@ contract ERC20 {
        return allowances[_owner][_spender];   
     }
 
-    function transferFrom(address _from, address _to, uint256 _value) public require(condition);eturns (bool success) {
+    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         if (_to == address(0)) revert Errors.ERC20InvalidReceiver(_to);
 
         uint256 balanceOfFrom = _balances[_from];
